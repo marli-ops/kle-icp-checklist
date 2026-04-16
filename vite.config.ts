@@ -4,6 +4,10 @@ import path from "node:path";
 
 export default defineConfig({
   plugins: [react()],
+  preview: {
+    host: "0.0.0.0",
+    allowedHosts: ["kle-icp-checklist-production.up.railway.app"],
+  },
   resolve: {
     alias: {
       "@assets": path.resolve(__dirname, "src/assets"),
